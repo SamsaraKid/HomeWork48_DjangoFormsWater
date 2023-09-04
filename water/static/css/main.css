@@ -1,0 +1,93 @@
+body{
+    font-family: Corbel;
+    background-color: #7acacc;
+    color: #480025;
+    box-sizing: border-box;
+}
+
+.center{
+    width: max-content;
+    margin: auto;
+    text-align: center;
+}
+
+a, .sendbut{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #476cff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #476cff;
+    text-decoration: none;
+    border: none;
+    color: #480025;
+}
+
+a:hover, .sendbut:hover, .field input:hover, .field textarea:hover, select:hover{
+    box-shadow: 0px 0px 10px #47ffd2;
+}
+
+a:active, .sendbut:active, select:active{
+    background-color: #47ffd2;
+}
+
+.field input, .field textarea, select{
+    width: 300px;
+    padding: 5px;
+    background-color: #476cff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px #476cff;
+    color: #480025;
+    text-align: center;
+}
+
+select{
+    width: 310px;
+}
+
+optgroup{
+    text-align: center;
+}
+
+.field input:focus, .field textarea:focus, select:focus{
+    background-color: #47ffd2;
+    color: #480025;
+    outline: 0;
+}
+
+ul{
+    margin: 0;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+#id_agree{
+    width: max-content;
+}
+
+form{
+    border: #480025 solid 1px;
+    border-radius: 10px;
+    width: max-content;
+    padding: 10px;
+    margin: 0 auto 20px;
+}
+
+.flex-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-div div{
+    margin-bottom: 10px;
+}
+
+.flex-div div:first-child{
+    width: 180px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.flex-div label{
+    vertical-align: middle;
+}

@@ -1,10 +1,24 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Форма заказа</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
+
+<form method="POST" novalidate>
+    {% csrf_token %}
+    {% for f in form %}
+        <div class="flex-div">
+            <div>{{ f.label_tag }}</div>
+            <div class="field">{{ f }}</div>
+            <div>{{ f.errors }}</div>
+        </div>
+    {% endfor %}
+    <input class="send-button" type="submit" value="Отправить">
+</form>
 
 </body>
 </html>
