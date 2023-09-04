@@ -8,5 +8,16 @@
 </head>
 <body>
 
+<div class="center-wrap">
+<h2>Детали заказа</h2>
+{% for n, d in data %}
+    <div class="flex-div">
+        <div>{{ n }}</div>
+        <div>{{ d }}</div>
+    </div>
+{% endfor %}
+<a href="{% url 'order' %}"><button>Новый заказ</button></a>
+</div>
+
 </body>
 </html>

@@ -8,16 +8,17 @@
 </head>
 <body>
 
-<form method="POST" novalidate>
+<form class="center-wrap" method="POST" novalidate>
+    <h2>Форма заказа воды</h2>
     {% csrf_token %}
     {% for f in form %}
         <div class="flex-div">
             <div>{{ f.label_tag }}</div>
             <div class="field">{{ f }}</div>
-            <div>{{ f.errors }}</div>
+            <div class="errors">{{ f.errors }}</div>
         </div>
     {% endfor %}
-    <input class="send-button" type="submit" value="Отправить">
+    <input type="submit" value="Сделать заказ">
 </form>
 
 </body>

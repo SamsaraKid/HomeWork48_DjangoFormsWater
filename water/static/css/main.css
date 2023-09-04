@@ -5,33 +5,44 @@ body{
     box-sizing: border-box;
 }
 
-.center{
-    width: max-content;
-    margin: auto;
+h2{
     text-align: center;
+    margin: 3%;
 }
 
-a, .sendbut{
+a{
+    text-decoration: none;
+}
+
+input[type=submit], button{
+    display: block;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: 0;
     padding: 10px;
     background-color: #476cff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #476cff;
-    text-decoration: none;
+    box-shadow: 0 0 10px #476cff;
     border: none;
     color: #480025;
+    width: 100%;
 }
 
-a:hover, .sendbut:hover, .field input:hover, .field textarea:hover, select:hover{
-    box-shadow: 0px 0px 10px #47ffd2;
+.errors{
+    width: 0;
+    overflow: visible;
+    white-space: nowrap;
 }
 
-a:active, .sendbut:active, select:active{
+input:hover, select:hover, button:hover{
+    box-shadow: 0 0 10px #47ffd2;
+}
+
+input[type=submit]:active, select:active, button:active{
     background-color: #47ffd2;
 }
 
-.field input, .field textarea, select{
-    width: 300px;
+input, select, button{
     padding: 5px;
     background-color: #476cff;
     border-radius: 10px;
@@ -41,15 +52,15 @@ a:active, .sendbut:active, select:active{
     text-align: center;
 }
 
+input{
+    width: 290px;
+}
+
 select{
-    width: 310px;
+    width: 300px;
 }
 
-optgroup{
-    text-align: center;
-}
-
-.field input:focus, .field textarea:focus, select:focus{
+input:focus, select:focus, button:focus{
     background-color: #47ffd2;
     color: #480025;
     outline: 0;
@@ -58,19 +69,16 @@ optgroup{
 ul{
     margin: 0;
     list-style-type: none;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
-#id_agree{
-    width: max-content;
-}
-
-form{
+.center-wrap{
     border: #480025 solid 1px;
     border-radius: 10px;
     width: max-content;
-    padding: 10px;
+    padding: 0 10px 10px;
     margin: 0 auto 20px;
+    box-shadow: 0 0 10px #476cff;
 }
 
 .flex-div{
@@ -83,11 +91,12 @@ form{
 }
 
 .flex-div div:first-child{
-    width: 180px;
+    width: 100px;
     text-align: right;
     margin-right: 10px;
 }
 
-.flex-div label{
+.flex-div label, .flex-div ul{
+    display: inline-block;
     vertical-align: middle;
 }
