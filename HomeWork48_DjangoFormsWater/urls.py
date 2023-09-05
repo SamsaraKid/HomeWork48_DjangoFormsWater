@@ -20,5 +20,5 @@ from water import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.order, name='order'),
+    path('', views.orderform, name='orderform'),
 ]
